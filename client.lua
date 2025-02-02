@@ -2,11 +2,11 @@ RegisterNetEvent("sc_progress:showNUI")
 AddEventHandler("sc_progress:showNUI", function(timeMs, message)
     SendNUIMessage({
         type = "showProgress",
-        time = timeMs,  -- Millisekunden direkt übergeben
+        time = timeMs,
         message = message
     })
 
-    SetNuiFocus(false, false) -- Kein Fokus auf NUI
+    SetNuiFocus(false, false)
 end)
 
 exports("showNUI", function(timeMs, message)
