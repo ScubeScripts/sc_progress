@@ -14,31 +14,31 @@ body {
 }
 
 #progress-container {
-    width: 15%; /* Breite auf 15% reduziert */
-    height: 30px; /* Höhe der Bar */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)); /* Sanfter Verlauf als Hintergrund */
+    width: 15%;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
     border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Weicherer, subtiler Schatten */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 6%;
-    left: 50%; /* Positioniert den Container in der Mitte */
-    transform: translateX(-50%); /* Verschiebt den Container um die Hälfte seiner Breite nach links */
+    left: 50%; 
+    transform: translateX(-50%);
     display: none;
     overflow: hidden;
 }
 
 #progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #00a1fff2, #61c5fff2); /* Sanfter Verlauf von Grün zu Hellgrün */
+    background: linear-gradient(90deg, #00a1fff2, #61c5fff2);
     width: 0;
-    border-radius: 15px; /* Runderer Rand für ein moderneres Aussehen */
+    border-radius: 15px; 
     position: absolute;
     left: 0;
-    transition: width 0.5s ease-out; /* Sanfterer Übergang */
+    transition: width 0.5s ease-out; 
 }
 
 #progress-text {
-    font-size: 14px; /* Etwas größere Schrift für bessere Lesbarkeit */
+    font-size: 14px; 
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
